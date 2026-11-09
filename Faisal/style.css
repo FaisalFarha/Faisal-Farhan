@@ -1,0 +1,288 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+  line-height: 1.7;
+  background: #f8fafc;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px #0000000d;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: bold;
+  color: #172554;
+  text-decoration: none;
+}
+
+.logo span, .hero h1 span {
+  color: #2563eb;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 530px;
+  display: flex;
+  align-items: center;
+  padding: 70px 10%;
+  background: linear-gradient(120deg, #dbeafe, #eff6ff);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.tag {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.15;
+  margin: 18px 0;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  padding: 13px 25px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.section {
+  padding: 75px 8%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  color: #172554;
+}
+
+.section-heading p {
+  color: #64748b;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.card {
+  padding: 25px;
+  background: white;
+  border-radius: 13px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 5px 20px #00000008;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon, .article-icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.articles {
+  background: #eff6ff;
+}
+
+.articles .cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#searchInput {
+  display: block;
+  width: min(100%, 550px);
+  margin: 0 auto 30px;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about > p {
+  max-width: 750px;
+  margin: auto;
+  color: #64748b;
+}
+
+.contact {
+  background: #eff6ff;
+}
+
+form {
+  max-width: 550px;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 15px;
+  background: #172554;
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 15px;
+}
+
+.footer-links a {
+  color: #bfdbfe;
+  text-decoration: none;
+}
+
+@media (max-width: 850px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero {
+    min-height: 450px;
+    padding: 55px 7%;
+  }
+
+  .section {
+    padding: 55px 6%;
+  }
+
+  .cards, .articles .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: 26px;
+  }
+}

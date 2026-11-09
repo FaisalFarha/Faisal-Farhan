@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduSmart provides educational resources, study tips and learning guides for students.">
+  <title>EduSmart - Learn. Grow. Succeed.</title>
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5VJFP2WD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="#" class="logo">Edu<span>Smart</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="tag">YOUR FUTURE STARTS HERE</span>
+    <h1>Unlock Your Potential Through <span>Education</span></h1>
+    <p>
+      Explore learning resources, improve your skills,
+      and discover new opportunities for your future.
+    </p>
+    <a href="#courses" class="btn">Explore Learning</a>
+  </div>
+</section>
+
+<section class="section" id="courses">
+  <div class="section-heading">
+    <h2>Explore Learning Categories</h2>
+    <p>Discover knowledge in different fields.</p>
+  </div>
+
+  <div class="cards">
+    <article class="card">
+      <div class="card-icon">📚</div>
+      <h3>Academic Learning</h3>
+      <p>Study guides, school subjects and useful learning resources.</p>
+      <a href="#articles">Explore →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">💻</div>
+      <h3>Technology</h3>
+      <p>Learn programming, digital skills and modern technology.</p>
+      <a href="#articles">Explore →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">🌍</div>
+      <h3>Languages</h3>
+      <p>Improve communication and discover new languages.</p>
+      <a href="#articles">Explore →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">🎯</div>
+      <h3>Career Skills</h3>
+      <p>Develop professional skills and prepare for your career.</p>
+      <a href="#articles">Explore →</a>
+    </article>
+  </div>
+</section>
+
+<section class="section articles" id="articles">
+  <div class="section-heading">
+    <h2>Latest Educational Articles</h2>
+    <p>Helpful ideas to support your learning journey.</p>
+  </div>
+
+  <input type="search" id="searchInput"
+    placeholder="Search educational articles..."
+    aria-label="Search articles">
+
+  <div class="cards" id="articleList">
+    <article class="card article-card">
+      <div class="article-icon">📖</div>
+      <span class="tag">STUDY TIPS</span>
+      <h3>5 Effective Study Habits for Students</h3>
+      <p>Discover practical ways to improve focus and organize your study time.</p>
+      <a href="#contact">Read More →</a>
+    </article>
+
+    <article class="card article-card">
+      <div class="article-icon">💡</div>
+      <span class="tag">TECHNOLOGY</span>
+      <h3>Why Digital Skills Matter Today</h3>
+      <p>Understand how digital knowledge can create opportunities.</p>
+      <a href="#contact">Read More →</a>
+    </article>
+
+    <article class="card article-card">
+      <div class="article-icon">🎓</div>
+      <span class="tag">CAREER</span>
+      <h3>How to Choose Your Career Path</h3>
+      <p>Learn how to explore your interests and set career goals.</p>
+      <a href="#contact">Read More →</a>
+    </article>
+  </div>
+  <p id="noResults" hidden>No matching articles found.</p>
+</section>
+
+<section class="about section" id="about">
+  <div class="section-heading">
+    <h2>About EduSmart</h2>
+  </div>
+  <p>
+    EduSmart is an educational platform dedicated to helping
+    students and lifelong learners access useful learning
+    resources, develop valuable skills and achieve their goals.
+  </p>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="section-heading">
+    <h2>Get in Touch</h2>
+    <p>Have a question or suggestion? Contact our team.</p>
+  </div>
+  <form id="contactForm">
+    <input type="text" placeholder="Your name" required>
+    <input type="email" placeholder="Your email" required>
+    <textarea placeholder="Your message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+  <p id="formMessage" aria-live="polite"></p>
+</section>
+</main>
+
+<footer>
+  <h2>EduSmart</h2>
+  <p>Learn. Grow. Succeed.</p>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p>© <span id="year"></span> EduSmart. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
